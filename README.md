@@ -24,6 +24,11 @@ The PlantVillage dataset consists of more than healthy and unhealthy leaf images
 
 ![Images of Plant village](/images/scratch.jpg)
 
+###Data preprocessing
+-Unbalanced dataset
+![Images of Plant village](/images/data_prev.png)
+
+
 ### Dataset
 Contents of the dataset:
 - Number of categories: 39
