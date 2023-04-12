@@ -26,14 +26,10 @@ The PlantVillage dataset consists of more than healthy and unhealthy leaf images
 
 ### Data preprocessing
 #### Unbalanced dataset
-
 ![Images of Plant village](/images/data_prev.png)
 
 #### Balanced dataset
-
 ![Images of Plant village](/images/data_next.png)
-
-
 
 ### Dataset
 Contents of the dataset:
