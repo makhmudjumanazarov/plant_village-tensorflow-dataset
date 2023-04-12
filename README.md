@@ -7,6 +7,7 @@
 The PlantVillage dataset consists of more than healthy and unhealthy leaf images divided into 39 categories by species and disease.<a href= "https://arxiv.org/abs/1511.08060">Original paper URL</a>, <a href= "https://data.mendeley.com/datasets/tywbtsjrjv/1">Dataset URL</a>
 
 -I have used the ResNet-50 CNN Model, which is pre-trained on the ImageNet dataset for classification. Data augementation has been used for making the model generalize better and also to avoid overfitting. The model achieved an accuracy of 62% on validation set, which is decent for this dataset.
+![Images of Plant village](/resnet50_evaluate.jpg)
 
 -Then I have used the VGG19 CNN Model. which is pre-trained on the ImageNet dataset for classification. Data augementation hasn't been used for making the model generalize better. The model achieved an accuracy 23% on validation set. This is not a good situation, but I don't understand why.
 
