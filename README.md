@@ -5,7 +5,9 @@
 
 ### Description
 The PlantVillage dataset consists of more than healthy and unhealthy leaf images divided into 39 categories by species and disease.
--The dataset <a href= "https://www.tensorflow.org/datasets/catalog/dmlab">Original paper URL</a>
+
+-<a href= "https://arxiv.org/abs/1511.08060">Original paper URL</a>
+-<a href= "https://data.mendeley.com/datasets/tywbtsjrjv/1">Dataset URL</a>
 
 -I have used the InceptionV3 CNN Model, which is pre-trained on the ImageNet dataset for classification. Data augementation has been used for making the model generalize better and also to avoid overfitting. The model achieved an accuracy of 80% on validation set, which is decent for this dataset.
 
