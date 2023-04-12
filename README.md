@@ -14,10 +14,8 @@ The PlantVillage dataset consists of more than healthy and unhealthy leaf images
 
 ### Dataset
 Contents of the dataset:
-- Number of categories: 6
-- Number of train images: 65550
-- Number of test images: 22375
-- Number of validation images: 22628
+- Number of categories: 39
+- Number of images: more than 60000
 
 Sample images of 10 different categories from the dataset:
 
