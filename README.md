@@ -20,6 +20,10 @@ The PlantVillage dataset consists of more than healthy and unhealthy leaf images
 4.The InceptionV3 achieved an accuracy 90% on validation set.
 ![Images of Plant village](/images/inceptionV3_evaluate.jpg)
 
+-Using Tensorflow, I built the architecture from scratch like exports' method. I have used the augmented data. The model achieved an accuracy 94% in 10 epochs on validation set. There is enough information for each class and the result is good!!!.
+
+![Images of Plant village](/images/scratch.jpg)
+
 ### Dataset
 Contents of the dataset:
 - Number of categories: 39
