@@ -17,7 +17,7 @@ Contents of the dataset:
 - Number of categories: 39
 - Number of images: more than 60000
 
-Sample images of 10 different categories from the dataset:
+Sample images of 9 different categories from the dataset:
 
 ![Images of Plant village](/images/sample.png)
 
