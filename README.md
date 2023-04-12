@@ -29,9 +29,12 @@ The PlantVillage dataset consists of more than healthy and unhealthy leaf images
 ![Images of Plant village](/images/data_prev.png)
 
 #### Balanced dataset
-1.Orange___Haunglongbing_(Citrus_greening)
-2.Soybean___healthy
-3.Tomato___Tomato_Yellow_Leaf_Curl_Virus
+-Orange___Haunglongbing_(Citrus_greening)
+
+-Soybean___healthy
+
+-Tomato___Tomato_Yellow_Leaf_Curl_Virus
+
 Since the number of images in the above three classes is more than the average number of images, we will take 2000 images in each class and delete the rest
 ![Images of Plant village](/images/data_next.png)
 
