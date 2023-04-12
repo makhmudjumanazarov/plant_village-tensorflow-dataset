@@ -1,9 +1,11 @@
-# Dmlab  Dataset Classification
--Transfer Learning using VGG19 CNN Model 
+# Plant Village  Dataset Classification
+-Transfer Learning using ResNet-50, VGG-19, MobileNetV3 and InceptionV3 CNN Models 
 
 -Building the CNN architecture from scratch
+
 ### Description
-The <a href= "https://www.tensorflow.org/datasets/catalog/dmlab">Dmlab dataset</a> contains frames observed by the agent acting in the DeepMind Lab environment, which are annotated by the distance between the agent and various objects present in the environment. The goal is to is to evaluate the ability of a visual model to reason about distances from the visual input in 3D environments. The Dmlab dataset consists of 360x480 color images in 6 classes. The classes are {close, far, very far} x {positive reward, negative reward} respectively.
+The PlantVillage dataset consists of 54303 healthy and unhealthy leaf images divided into 39 categories by species and disease.
+-<a href= "https://www.tensorflow.org/datasets/catalog/dmlab">Original paper URL</a>
 
 -I have used the InceptionV3 CNN Model, which is pre-trained on the ImageNet dataset for classification. Data augementation has been used for making the model generalize better and also to avoid overfitting. The model achieved an accuracy of 80% on validation set, which is decent for this dataset.
 
