@@ -24,6 +24,21 @@ The PlantVillage dataset consists of more than healthy and unhealthy leaf images
 
 ![Images of Plant village](/images/scratch.jpg)
 
+### Data preprocessing
+#### Unbalanced dataset
+![Images of Plant village](/images/data_prev.png)
+
+#### Balanced dataset
+-Orange___Haunglongbing_(Citrus_greening)
+
+-Soybean___healthy
+
+-Tomato___Tomato_Yellow_Leaf_Curl_Virus
+
+
+Since the number of images in the above three classes is more than the average number of images, we will take 2000 images in each class and delete the rest
+![Images of Plant village](/images/data_next.png)
+
 ### Dataset
 Contents of the dataset:
 - Number of categories: 39
