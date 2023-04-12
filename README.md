@@ -6,11 +6,11 @@
 ### Description
 The PlantVillage dataset consists of more than healthy and unhealthy leaf images divided into 39 categories by species and disease.<a href= "https://arxiv.org/abs/1511.08060">Original paper URL</a>, <a href= "https://data.mendeley.com/datasets/tywbtsjrjv/1">Dataset URL</a>
 
--I have used the InceptionV3 CNN Model, which is pre-trained on the ImageNet dataset for classification. Data augementation has been used for making the model generalize better and also to avoid overfitting. The model achieved an accuracy of 80% on validation set, which is decent for this dataset.
+-I have used the ResNet-50 CNN Model, which is pre-trained on the ImageNet dataset for classification. Data augementation has been used for making the model generalize better and also to avoid overfitting. The model achieved an accuracy of 62% on validation set, which is decent for this dataset.
 
 -Then I have used the VGG19 CNN Model. which is pre-trained on the ImageNet dataset for classification. Data augementation hasn't been used for making the model generalize better. The model achieved an accuracy 23% on validation set. This is not a good situation, but I don't understand why.
 
--In last place,  I built vgg19 architecture from scratch via Tensorflow. I didn't use data augementation in this either for making the model generalize better. The model achieved an accuracy 1.25% for 10 epochs on validation set. This is a bad situation, but I don't understand why. I think there is not enough information for each class.
+-In last place,  I built vgg19 architecture from scratch via Tensorflow. I didn't use data augementation in this either for making the model generalize better. The model achieved an accuracy 1.25% in 10 epochs on validation set. This is a bad situation, but I don't understand why. I think there is not enough information for each class.
 
 ### Dataset
 Contents of the dataset:
