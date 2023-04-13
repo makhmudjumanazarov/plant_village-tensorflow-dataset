@@ -8,7 +8,7 @@ from tensorflow.keras.models import load_model
 
 
 # Load the trained model
-model_load = load_model('model')
+model_load = load_model('model/')
 st.write(model_load.summary())
 
 # # Define the class labels
