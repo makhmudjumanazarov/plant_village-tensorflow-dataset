@@ -27,7 +27,8 @@ if st.button('Predict'):
         st.image(img_array)
         img_array = cv2.resize(img_array.astype('uint8'), (224, 224))
         st.write(img_array.shape)
-#         img_array = np.expand_dims(img_array, axis=1)
+        img_array = np.expand_dims(img_array, axis=1)
+        st.write(img_array.shape)
 #         img_array = img_array.transpose((1,0,2,3))  
 #         val = model_load.predict(img_array)
 #         output_text = labels[np.argmax(val[0])]
