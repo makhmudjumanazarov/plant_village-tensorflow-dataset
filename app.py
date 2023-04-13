@@ -25,7 +25,7 @@ if img_file_buffer is not None:
 if st.button('Predict'):
     try:
         st.image(img_array)
-        img_array = cv2.resize(img_array.astype('uint8'), (32, 32))
+        img_array = cv2.resize(img_array.astype('uint8'), (224, 224))
         st.write(img_array.shape)
 #         img_array = np.expand_dims(img_array, axis=1)
 #         img_array = img_array.transpose((1,0,2,3))  
