@@ -30,11 +30,10 @@ if st.button('Predict'):
         img_array = np.expand_dims(img_array, axis=1)
 #         st.write(img_array.shape)
         img_array = img_array.transpose((1,0,2,3))
-#         st.write(img_array.shape)
-        val = model_load.predict(img_array)
-        st.write(img_array)
-        output_text = labels[np.argmax(val[0])]
-        font_size = "24px"
-        st.markdown("<h4 style='text-align: left; color: #2F3130; font-size: {};'>{}</h4>".format(font_size, output_text), unsafe_allow_html=True)
+        st.write(img_array.shape)
+#         val = model_load.predict(img_array)
+#         output_text = labels[np.argmax(val[0])]
+#         font_size = "24px"
+#         st.markdown("<h4 style='text-align: left; color: #2F3130; font-size: {};'>{}</h4>".format(font_size, output_text), unsafe_allow_html=True)
     except:
         pass
