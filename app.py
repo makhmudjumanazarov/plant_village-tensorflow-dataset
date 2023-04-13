@@ -3,16 +3,12 @@ import pandas as pd
 import streamlit as st
 import cv2
 from PIL import Image
-from svgpathtools import parse_path
-from pathlib import Path
-from glob import glob
-from random import randint
 from tensorflow.keras.models import load_model
 
 
 model_load = load_model('models/scratch')
 
-st.title('CIFAR100 Image Recognizer')
+st.title('plant_village-tensorflow-dataset')
 labels = ['apple', 'aquarium_fish', 'baby', 'bear', 'beaver', 'bed', 'bee', 'beetle', 'bicycle', 'bottle', 'bowl', 'boy', 'bridge', 'bus', 'butterfly', 
           'camel', 'can', 'castle', 'caterpillar', 'cattle', 'chair', 'chimpanzee', 'clock', 'cloud', 'cockroach', 'couch', 'crab', 'crocodile', 'cup', 
           'dinosaur', 'dolphin', 'elephant', 'flatfish', 'forest', 'fox', 'girl', 'hamster', 'house', 'kangaroo', 'keyboard', 'lamp', 'lawn_mower', 'leopard',
