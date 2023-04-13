@@ -37,10 +37,10 @@ if st.button('Predict'):
 
     # Transpose the dimensions to match the expected input format of the model
     img_array = img_array.transpose((0, 1, 2, 3))
-    st.write(type(tf.convert_to_tensor(img_array)))
+    st.write(type(img_array)
 
     # Get the predicted probabilities for each class
-    val = model_load.predict(tf.convert_to_tensor(img_array))
+    val = model_load.predict(img_array)
 
 #     # Get the index of the class with the highest probability
 #     predicted_index = np.argmax(val[0])
