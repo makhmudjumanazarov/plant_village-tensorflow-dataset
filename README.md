@@ -80,7 +80,6 @@ The plant_village.ipynb notebook can be directly run on Jupyter Notebook
 </pre> 
 <br/>
 
-
 ## Plant Village - Streamlit - Demo 
 
 Plant Village via Streamlit 
