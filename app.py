@@ -41,9 +41,10 @@ if st.button('Predict'):
         
         # Get the predicted probabilities for each class
         val = model_load.predict(img_array)
-        
+        st.write(val)
         # Get the index of the class with the highest probability
         predicted_index = np.argmax(val[0])
+        
         
         # Get the label corresponding to the predicted class
         predicted_label = labels[predicted_index]
