@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import streamlit as st
+import tensorflow as tf
 import cv2
 from PIL import Image
 from tensorflow.keras.models import load_model
@@ -39,7 +40,7 @@ if st.button('Predict'):
     st.write(type(img_array))
 
     # Get the predicted probabilities for each class
-    val = model_load.predict(img_array)
+    val = model_load.predict(tf.convert_to_tensor(img_array))
 
 #     # Get the index of the class with the highest probability
 #     predicted_index = np.argmax(val[0])
