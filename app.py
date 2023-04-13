@@ -1,26 +1,20 @@
 import numpy as np
 import pandas as pd
 import streamlit as st
-# import cv2
+import cv2
 from PIL import Image
-from svgpathtools import parse_path
-from pathlib import Path
-from glob import glob
-from random import randint
 from tensorflow.keras.models import load_model
 
 
-model_load = load_model('model')
+model_load = load_model('models/scratch/')
 
-st.title('CIFAR100 Image Recognizer')
-labels = ['apple', 'aquarium_fish', 'baby', 'bear', 'beaver', 'bed', 'bee', 'beetle', 'bicycle', 'bottle', 'bowl', 'boy', 'bridge', 'bus', 'butterfly', 
-          'camel', 'can', 'castle', 'caterpillar', 'cattle', 'chair', 'chimpanzee', 'clock', 'cloud', 'cockroach', 'couch', 'crab', 'crocodile', 'cup', 
-          'dinosaur', 'dolphin', 'elephant', 'flatfish', 'forest', 'fox', 'girl', 'hamster', 'house', 'kangaroo', 'keyboard', 'lamp', 'lawn_mower', 'leopard',
-          'lion', 'lizard', 'lobster', 'man', 'maple_tree', 'motorcycle', 'mountain', 'mouse', 'mushroom', 'oak_tree', 'orange', 'orchid', 'otter', 
-          'palm_tree', 'pear', 'pickup_truck', 'pine_tree', 'plain', 'plate', 'poppy', 'porcupine', 'possum', 'rabbit', 'raccoon', 'ray', 'road', 'rocket',
-          'rose', 'sea', 'seal', 'shark', 'shrew', 'skunk', 'skyscraper', 'snail', 'snake', 'spider', 'squirrel', 'streetcar', 'sunflower', 'sweet_pepper', 
-          'table', 'tank', 'telephone', 'television', 'tiger', 'tractor', 'train', 'trout', 'tulip', 'turtle', 'wardrobe', 'whale', 'willow_tree', 'wolf',
-          'woman', 'worm']
+st.title('plant_village-tensorflow-dataset')
+labels = ['Apple_scab', 'Apple_black_rot', 'Apple_cedar_apple_rust', 'Apple_healthy', 'Background_without_leaves', 'Blueberry_healthy', 'Cherry_powdery_mildew', 
+          'Cherry_healthy', 'Corn_gray_leaf_spot', 'Corn_common_rust', 'Corn_northern_leaf_blight', 'Corn_healthy', 'Grape_black_rot', 'Grape_black_measles', 
+          'Grape_leaf_blight', 'Grape_healthy', 'Orange_haunglongbing', 'Peach_bacterial_spot', 'Peach_healthy', 'Pepper_bacterial_spot', 'Pepper_healthy', 
+          'Potato_early_blight', 'Potato_healthy', 'Potato_late_blight', 'Raspberry_healthy', 'Soybean_healthy', 'Squash_powdery_mildew', 'Strawberry_healthy', 
+          'Strawberry_leaf_scorch', 'Tomato_bacterial_spot', 'Tomato_early_blight', 'Tomato_healthy', 'Tomato_late_blight', 'Tomato_leaf_mold', 'Tomato_septoria_leaf_spot',
+          'Tomato_spider_mites_two-spotted_spider_mite', 'Tomato_target_spot', 'Tomato_mosaic_virus', 'Tomato_yellow_leaf_curl_virus']
 
 
 img_file_buffer = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
@@ -30,10 +24,15 @@ if img_file_buffer is not None:
     
 if st.button('Predict'):
     try:
-        img_array = cv2.resize(img_array.astype('uint8'), (32, 32))
+        st.image(img_array)
+        img_array = cv2.resize(img_array.astype('uint8'), (224, 224))
+        st.write(img_array.shape)
         img_array = np.expand_dims(img_array, axis=1)
-        img_array = img_array.transpose((1,0,2,3))  
+        st.write(img_array.shape)
+        img_array = img_array.transpose((1,0,2,3))
+        st.write(img_array.shape)
         val = model_load.predict(img_array)
+        st.write(model_load)
         output_text = labels[np.argmax(val[0])]
         font_size = "24px"
         st.markdown("<h4 style='text-align: left; color: #2F3130; font-size: {};'>{}</h4>".format(font_size, output_text), unsafe_allow_html=True)
