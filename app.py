@@ -38,8 +38,8 @@ if st.button('Predict'):
     img_array = img_array.transpose((0, 1, 2, 3))
     st.write(img_array)
 
-#     # Get the predicted probabilities for each class
-#     val = model_load.predict(img_array)
+    # Get the predicted probabilities for each class
+    val = model_load.predict(img_array)
 
 #     # Get the index of the class with the highest probability
 #     predicted_index = np.argmax(val[0])
