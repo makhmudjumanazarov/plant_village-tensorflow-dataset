@@ -6,7 +6,7 @@ from PIL import Image
 from tensorflow.keras.models import load_model
 
 
-model_load = load_model('models/scratch')
+model_load = load_model('models/scratch/')
 
 st.title('plant_village-tensorflow-dataset')
 labels = ['Apple_scab', 'Apple_black_rot', 'Apple_cedar_apple_rust', 'Apple_healthy', 'Background_without_leaves', 'Blueberry_healthy', 'Cherry_powdery_mildew', 
