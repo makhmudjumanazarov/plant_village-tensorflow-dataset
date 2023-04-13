@@ -4,11 +4,9 @@ import streamlit as st
 import tensorflow as tf
 import cv2
 from PIL import Image
-from tensorflow.keras.models import load_model
-
 
 # Load the trained model
-model_load = load_model('model/')
+model_load = tf.keras.models.load_model('model')
 st.write(model_load.summary())
 
 # # Define the class labels
