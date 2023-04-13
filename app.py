@@ -6,7 +6,7 @@ import cv2
 from PIL import Image
 
 # Load the trained model
-model_load = tf.keras.models.load_model('/model/')
+model_load = tf.keras.models.load_model('model/')
 st.write(model_load.summary())
 
 # # Define the class labels
