@@ -36,7 +36,7 @@ if st.button('Predict'):
         img_array = np.expand_dims(img_array, axis=0)
         
         # Transpose the dimensions to match the expected input format of the model
-        img_array = img_array.transpose((0, 3, 1, 2))
+        img_array = img_array.transpose((0, 1, 2, 3))
         st.write(img_array.shape)
         
         # Get the predicted probabilities for each class
