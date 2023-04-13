@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import streamlit as st
-# import cv2
+import cv2
 from PIL import Image
 from svgpathtools import parse_path
 from pathlib import Path
@@ -10,7 +10,7 @@ from random import randint
 from tensorflow.keras.models import load_model
 
 
-model_load = load_model('model')
+model_load = load_model('models/scratch')
 
 st.title('CIFAR100 Image Recognizer')
 labels = ['apple', 'aquarium_fish', 'baby', 'bear', 'beaver', 'bed', 'bee', 'beetle', 'bicycle', 'bottle', 'bowl', 'boy', 'bridge', 'bus', 'butterfly', 
