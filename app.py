@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import streamlit as st
-import cv2
+# import cv2
 from PIL import Image
 from svgpathtools import parse_path
 from pathlib import Path
