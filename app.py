@@ -36,15 +36,16 @@ if st.button('Predict'):
 
     # Transpose the dimensions to match the expected input format of the model
     img_array = img_array.transpose((0, 1, 2, 3))
+    st.write(img_array)
 
-    # Get the predicted probabilities for each class
-    val = model_load.predict(img_array)
+#     # Get the predicted probabilities for each class
+#     val = model_load.predict(img_array)
 
-    # Get the index of the class with the highest probability
-    predicted_index = np.argmax(val[0])
+#     # Get the index of the class with the highest probability
+#     predicted_index = np.argmax(val[0])
 
-    # Get the label corresponding to the predicted class
-    predicted_label = labels[predicted_index]
+#     # Get the label corresponding to the predicted class
+#     predicted_label = labels[predicted_index]
 
-    # Display the predicted label
-    st.write(f"Predicted label: {predicted_label}")
+#     # Display the predicted label
+#     st.write(f"Predicted label: {predicted_label}")
