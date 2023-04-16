@@ -9,6 +9,8 @@ from PIL import Image
 # Load the trained model
 model_load = tf.keras.models.load_model('model')
 
+st.title('Plant Village Images Recognizer')
+
 # Define the class labels
 labels = ['Apple_scab', 'Apple_black_rot', 'Apple_cedar_apple_rust', 'Apple_healthy', 'Background_without_leaves', 'Blueberry_healthy', 'Cherry_powdery_mildew', 
           'Cherry_healthy', 'Corn_gray_leaf_spot', 'Corn_common_rust', 'Corn_northern_leaf_blight', 'Corn_healthy', 'Grape_black_rot', 'Grape_black_measles', 
