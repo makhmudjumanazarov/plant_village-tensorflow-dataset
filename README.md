@@ -84,4 +84,4 @@ The plant_village.ipynb notebook can be directly run on Jupyter Notebook
 
 Plant Village via Streamlit 
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/makhmudjumanazarov/CIFAR100/main/app.py)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/makhmudjumanazarov/plant_village-tensorflow-dataset/main/stream.py)
