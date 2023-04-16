@@ -7,7 +7,7 @@ from PIL import Image
 
 
 # Load the trained model
-model_load = tf.keras.models.load_model('scratch')
+model_load = tf.keras.models.load_model('model')
 
 # Define the class labels
 labels = ['Apple_scab', 'Apple_black_rot', 'Apple_cedar_apple_rust', 'Apple_healthy', 'Background_without_leaves', 'Blueberry_healthy', 'Cherry_powdery_mildew', 
